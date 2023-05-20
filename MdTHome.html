@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head> 
+    <title>PC Haven</title>
+    <link rel="stylesheet" href="Mdt.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url(hmimg.jpg);
+            background-size: 1600px;
+            background-position: center;
+        }
+        .Home {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+  color: teal;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
+    </style>
+</head>
+        <body>
+            <header>
+                <h1>Welcome to PC Haven</h1>
+            </header>
+            <nav>
+                <a href="MdTHome.html">Home</a>
+                <a href="MdTProduct.html">Products</a>
+                <a href="MdTAbtus.html">About Us</a>
+            </nav>
+            <div class="Home">
+                <div class="box">
+                  <img src="amd.jpg">
+                  <span>In Partnership With AMD</span>
+                </div>
+                <div class="box">
+                  <img src="prepc.jpg">
+                  <span>Pre Build PCs</span>
+                </div>
+                <div class="box">
+                  <img src="lap.jpg">
+                  <span>Laptops</span>
+                </div>
+                <div class="box">
+                  <img src="rog.jpg">
+                  <span>ROG Peripherals Bundle</span>
+                </div>
+              </div>
+    </body>
+</html>
